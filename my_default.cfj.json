@@ -1,7 +1,7 @@
 {
   "requiredVersion": 1,
   "programVersion": 26,
-  "ruleCount": 98,
+  "ruleCount": 100,
   "autoActivateNewFeatures": true,
   "rules": [
     {
@@ -49,6 +49,15 @@
         "EmptyLineBelowSelect": "1",
         "EmptyLineAboveSelect": "1",
         "MovePrepareMethods": "0"
+      }
+    },
+    {
+      "ruleID": "ONE_COMMAND_PER_LINE",
+      "isActive": true,
+      "settingCount": 2,
+      "settings": {
+        "KeepOneLinersAfterWhen": "1",
+        "KeepMultiLinersAfterWhen": "0"
       }
     },
     {
@@ -158,10 +167,10 @@
       "isActive": true,
       "settingCount": 7,
       "settings": {
-        "MeasureForConstantsOnlyUsedInComment": "1",
-        "MeasureForVarsNeverUsed": "0",
+        "MeasureForConstantsOnlyUsedInComment": "3",
+        "MeasureForVarsNeverUsed": "3",
         "MeasureForAssignedVars": "0",
-        "MeasureForConstantsNeverUsed": "1",
+        "MeasureForConstantsNeverUsed": "3",
         "MeasureForVarsOnlyUsedInComment": "1",
         "MeasureForAssignedVarsOnlyUsedInComment": "0",
         "MeasureForVarsOnlyAssignedInMessageInto": "0"
@@ -400,6 +409,15 @@
       "isActive": true,
       "settingCount": 0,
       "settings": {}
+    },
+    {
+      "ruleID": "EXIT_OUTSIDE_LOOP",
+      "isActive": true,
+      "settingCount": 2,
+      "settings": {
+        "ApplyToProcedures": "1",
+        "ApplyToEventBlocks": "1"
+      }
     },
     {
       "ruleID": "CHECK_OUTSIDE_LOOP",
@@ -1081,11 +1099,12 @@
     {
       "ruleID": "DDL_ALIGN_DATA_SOURCES",
       "isActive": true,
-      "settingCount": 5,
+      "settingCount": 6,
       "settings": {
         "AlignDataSources": "1",
         "AlignAssociationsWithJoins": "0",
         "AlignOnConditions": "1",
+        "AlignAssociationTo": "1",
         "ConsiderAllParamAssignLines": "0",
         "AlignAliases": "1"
       }
